@@ -1,0 +1,650 @@
+/*g00gle f0nts*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Media query para ajustar los artículos cuando el ancho de pantalla es menor a 800px */
+@media (max-width: 800px) {
+  .proximos-estrenos-main {
+    flex-direction: column;
+  }
+
+  .proximos-estrenos-main article {
+    flex: 0 0 100%;
+  }
+}
+
+/* Ajustar el tamaño de los enlaces de navegación en pantallas pequeñas */
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    /* Cambiamos la dirección de flexión a columna */
+  }
+}
+
+/* Media query para ajustar los artículos en forma vertical a 800 px o menos */
+@media (max-width: 800px) {
+  .articles-container {
+    flex-direction: column;
+    /* Los artículos se mostrarán en columna */
+  }
+
+  /* Estilos adicionales para los artículos en la media query */
+  article {
+    margin-bottom: 20px;
+    /* Espacio entre los artículos */
+  }
+}
+
+@media (max-width: 800px) {
+  aside {
+    flex-direction: column;
+    /* Cambiar la dirección del flexbox a columna */
+    align-items: center;
+    /* Centrar los elementos en el eje vertical */
+  }
+
+  aside img {
+    margin-right: 0;
+    /* Eliminar el margen entre las imágenes */
+    margin-bottom: 20px;
+    /* Agregar un margen inferior entre las imágenes */
+  }
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*pagina esil0s de terr0r*/
+@media (max-width: 800px) {
+  .mediaq {
+    flex-direction: column;
+    /* Los artículos se muestran en una sola columna */
+
+  }
+
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  /* Color de fondo oscuro */
+  color: #fff;
+  /* Color de texto blanco */
+}
+
+/* Estilos para el encabezado (Header) */
+header {
+  background-image: url(../img/1\ \(18\).jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el título */
+h1 {
+
+  font-size: 80px;
+  color: #ff8c00;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  padding: 20px 0;
+  text-transform: uppercase;
+  /* Convertir el texto a mayúsculas */
+  border: 3px dashed #ff8c00;
+  /* Agregar un borde con líneas punteadas del mismo color */
+  display: inline-block;
+  padding: 10px;
+  /* Agregar un espaciado interno para las líneas del borde */
+
+}
+
+h1 a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+/* Estilos para la navegación (Nav) */
+nav {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* Estilos al pasar el cursor sobre los enlaces de la navegación */
+nav a:hover {
+  background-color: #ff8c00;
+  color: #222;
+
+}
+
+nav a.active {
+  /* Estilos para el enlace de la página actual */
+  color: #ff8c00;
+  font-weight: bold;
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para las secciones */
+section {
+  flex: auto;
+  margin: 20px;
+
+}
+
+h2 {
+  color: #ff8c00;
+  font-size: 30px;
+}
+
+/* Estilos para el hr */
+hr {
+  border: none;
+  border-top: 2px solid #ff8c00;
+  margin: 20px 0;
+  width: 50%;
+}
+
+
+/* Definir el máximo de cuatro columnas por fila */
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  flex-basis: calc(25% - 20px);
+  /* Un máximo de cuatro columnas */
+  margin: 10px;
+  /* Espacio entre los artículos */
+  background-color: #333;
+  /* Cambiamos el color de fondo */
+  color: #fff;
+  /* Cambiamos el color del texto */
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+/* Estilos para las imágenes dentro de los artículos */
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos para los títulos y enlaces dentro de los artículos */
+article h3,
+article p,
+article a {
+  margin: 5px 0;
+
+}
+
+/* Estilos para los enlaces del tráiler */
+.trailer-link {
+  display: block;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+/* Estilos al pasar el cursor sobre los enlaces del tráiler */
+.trailer-link:hover {
+  background-color: #ff8c00;
+  color: #222;
+}
+
+/* Estilos para los enlaces dentro de los artículos */
+article a {
+  text-decoration: none;
+  color: #ff8c00;
+}
+
+/* Estilos al pasar el cursor sobre los artículos */
+article:hover {
+
+  transform: translateY(-5px);
+}
+
+/*aside*/
+
+/* Estilos para el aside */
+aside {
+  background-color: #333;
+  padding: 20px;
+  font-size: 20px;
+  color: #fe6a25;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para las imágenes dentro del aside */
+aside img {
+  width: 300px;
+  height: auto;
+  margin-right: 0px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Estilos al pasar el cursor sobre las imágenes */
+aside img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*f00ter*/
+/* Estilos para el footer */
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-link,
+.footer-links a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 2px solid #ff8c00;
+  border-radius: 5px;
+}
+
+.home-link:hover,
+.footer-links a:hover {
+  background-color: #ff8c00;
+  color: #222;
+}
+
+.copy {
+  color: #fff;
+  margin-top: 10px;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+
+/* Estilos para el formulario */
+
+/* Estilos para los elementos h2 y el formulario específico */
+.contact-form {
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form h2 {
+  color: #ff8c00;
+  margin: 20px 0;
+}
+
+/* Estilos para el formulario */
+.contact-form form {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilos para los campos del formulario */
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  color: #ff8c00;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ff8c00;
+  /* Borde naranja */
+  border-radius: 5px;
+  color: #333;
+}
+
+/* Ajuste para colocar cada campo debajo del otro */
+.contact-form input:not([type="submit"]),
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+.contact-form input[type="submit"] {
+  background-color: #ff8c00;
+  color: #fff;
+  cursor: pointer;
+}
+
+.f0rm {
+  background-color: #222;
+}
+
+/*aside  pagina estil0s de terr0r*/
+
+
+/* Estilos para el aside con iframes de trailers */
+.trailer-aside {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  flex: 0 0 300px;
+}
+
+.trailer-aside h3 {
+  color: #8b0000;
+  margin-top: 0;
+}
+
+/* Estilos para los iframes de trailers */
+.trailer-wrapper {
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+/*----pagina pr0xim0s estren0s----------*/
+
+
+/* Estilos para el main con la clase "proximos-estrenos-main" */
+.proximos-estrenos-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.proximos-estrenos-main article {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ff8c00;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.proximos-estrenos-main h2 {
+  color: #ff8c00;
+  margin-top: 10px;
+}
+
+.proximos-estrenos-main p {
+  margin-top: 5px;
+}
+
+.proximos-estrenos-main .mas-info-btn {
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.proximos-estrenos-main .mas-info-btn:hover {
+  background-color: #ffae42;
+}
+
+/*aside pagina pr0xim0s estren0s*/
+
+/* Estilos específicos para el aside con la clase .custom-aside */
+.custom-aside {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+
+}
+
+.custom-aside .aside-link {
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+
+}
+
+.custom-aside .aside-link:hover {
+  background-color: #e85a00;
+}
+
+/*b00straps-------------------------------------------*/
+/* Agrega estilos para el main y el botón de toast */
+
+/* Estilos para el fondo del main */
+.main-container {
+  padding: 20px;
+}
+
+/* Estilos para el botón de toast */
+#liveToastBtn {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: #fff;
+}
+
+#liveToast .toast-header {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+#liveToast .toast-body {
+  background-color: #333;
+  color: #fff;
+}
+
+.text-orange {
+  color: #ff8c00;
+}
+
+/* Estilos para toda la página con la tipografía "Bebas Neue" */
+.b0dy {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Estilos para el logo o título */
+.page-quienes-s {
+
+  font-size: 80px;
+  color: #ff8c00;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  padding: 20px 0;
+  text-transform: uppercase;
+  border: 3px dashed #ff8c00;
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.page-quienes-s a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+
+
+/* Estilo personalizado para el botón */
+.btn-terrorfilms {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Estilo para el popover */
+.popover-header {
+  background-color: #ff8c00;
+  color: #ffffff;
+}
+
+.popover-body {
+  background-color: #333;
+  color: #ffffff;
+}
+
+
+.footer-logo {
+  font-size: 30px;
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-terrorfilms {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.footer-copy {
+  text-align: center;
+}
+
+/* Estilo para el popover */
+.popover-header {
+  background-color: #ff8c00;
+  color: #ffffff;
+}
+
+.popover-body {
+  background-color: #333;
+  color: #ffffff;
+}
+
+/*estil0s para el quienes s0m0s*/
+
+.container-fluid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Ajustes de estilo para el texto de Quiénes Somos */
+.hq-s {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.pq-s {
+
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 40px;
+}
+
+/*-----------aside qs--------------------*/
+
+/*estil0s para el b0t0n de b00straps mas inf0*/
+
+
+/* Estilos personalizados para el botón */
+.custom-button {
+
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+/* Estilos al pasar el mouse sobre el botón */
+.custom-button:hover {
+  background-color: #ff5900;
+  border-color: #ff5900;
+  color: #fff;
+}
+
+/* Estilos cuando el botón está activo */
+.custom-button:active {
+  background-color: #e64a00;
+  border-color: #e64a00;
+  color: #fff;
+}
+
+/* Estilos personalizados para el popover */
+.popover-body {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: #333;
+  background-color: #ff8c00;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popover-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  background-color: #ff5900;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+}
